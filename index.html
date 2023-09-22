@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Weight Converter</h2>
+      <div class="input-wrapper">
+        <label for="conversionType">Select Conversion:</label>
+        <select id="conversionType">
+          <option value="kgToLb">Kilograms to Pounds</option>
+          <option value="kgToOz">Kilograms to Ounces</option>
+          <option value="lbToKg">Pounds to Kilograms</option>
+          <option value="lbToOz">Pounds to Ounces</option>
+          <option value="ozToKg">Ounces to Kilograms</option>
+          <option value="ozToLb">Ounces to Pounds</option>
+        </select>
+      </div>
+      <div class="input-wrapper">
+        <label for="inputValue">Input Value:</label>
+        <input type="number" id="inputValue" />
+      </div>
+      <div class="input-wrapper">
+        <button id="convertButton">Convert</button>
+      </div>
+      <div class="output-wrapper">
+        <label for="outputValue">Result:</label>
+        <input type="text" id="outputValue" readonly />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
